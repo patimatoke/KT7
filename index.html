@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Котокафе «Мягкие лапки»</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <span>Главная</span>
+            <span>О нас</span>
+            <span>Котики</span>
+            <span>Меню</span>
+            <span>Записаться</span>
+        </nav>
+    </header>
+
+    <main>
+        <section class="home-section">
+            <div class="hero-content">
+                <h1>Мягкие лапки</h1>
+                <p>Уютное пространство, где кофе встречается с мурчанием</p>
+                <button class="btn booking-btn">Записаться к котикам</button>
+            </div>
+        </section>
+
+        <section class="about-section">
+            <div class="about-text">
+                <h2>Наше уютное кафе</h2>
+                <p>Мы открыли «Мягкие лапки», чтобы вы могли отдохнуть от городской суеты в компании самых ласковых пушистиков. Все наши обитатели привиты и очень любят гостей.</p>
+            </div>
+            <img src="{FBF76BBC-0236-44BA-AA50-69619B30C51F}.png" class="about-img" alt="Интерьер кафе">
+        </section>
+
+        <section class="cats-section">
+            <h2>Наши жители</h2>
+            <div class="cat-grid">
+                <div class="cat-card">
+                    <img src="котек.jpg" alt="Кот Ячмень">
+                    <div class="cat-info">
+                        <h3>Ячмень</h3>
+                        <p>Главный по обнимашкам</p>
+                    </div>
+                </div>
+                <div class="cat-card">
+                    <img src="Без названия (4).jpg" alt="Кот Пуфик">
+                    <div class="cat-info">
+                        <h3>Пуфик</h3>
+                        <p>Мастер эффектного сна</p>
+                    </div>
+                </div>
+                <div class="cat-card">
+                    <img src="Без названия (3).jpg" alt="Кошка Котлетка">
+                    <div class="cat-info">
+                        <h3>Котлетка</h3>
+                        <p>Ценитель латте-арта</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="menu-section">
+            <h2>Кофейная карта</h2>
+            <table class="menu-table">
+                <thead>
+                    <tr>
+                        <th>Название</th>
+                        <th>Описание</th>
+                        <th>Цена</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Котпучино</strong></td>
+                        <td>Классика с густой пенкой</td>
+                        <td>250 ₽</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Мяу-Латте</strong></td>
+                        <td>С нежным карамельным сиропом</td>
+                        <td>280 ₽</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Амур-икано</strong></td>
+                        <td>Для тех, кто любит покрепче</td>
+                        <td>190 ₽</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="booking-section">
+            <div class="booking-card">
+                <h2>Загляните в гости</h2>
+                <form class="booking-form">
+                    <div class="form-group">
+                        <label for="name">Имя:</label>
+                        <input type="text" id="name" name="name" placeholder="Ваше имя" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Возраст:</label>
+                        <div class="radio-group">
+                            <label class="radio-item">
+                                <input type="radio" name="age" value="under18">
+                                <span>До 18 лет</span>
+                            </label>
+                            <label class="radio-item">
+                                <input type="radio" name="age" value="18-30" checked>
+                                <span>18-30 лет</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Пожелания:</label>
+                        <textarea id="message" name="message" placeholder="Какого котика хотите обнять?"></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-btn">Забронировать визит</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="social-icons">
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-vk"></i>
+            <i class="fa fa-facebook"></i>
+        </div>
+        <p>&copy; 2025 «Мягкие лапки». С любовью к каждой кошке.</p>
+        <p><small>Работаем ежедневно с 10:00 до 22:00</small></p>
+    </footer>
+
+</body>
+</html>
